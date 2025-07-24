@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galif | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: #f0f0f0;
+    }
+
+    header {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      padding: 80px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    nav {
+      background: #1a1a2e;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #00ffff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-align: center;
+      background: linear-gradient(to right, #ff00cc, #3333ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-container img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 3px solid #00ffff;
+    }
+
+    .about-container p {
+      flex: 1;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px; /* Reduced gap */
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.skills .card {
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  background: linear-gradient(135deg, #357d92, #0072ff); /* Gradient background */
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.skills .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.skills .card img {
+  width: 100%;
+  height: 70%;
+  object-fit: contain; /* or try "cover" for full fill */
+  margin-bottom: 5px;
+}
+
+
+    .projects .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+      transition: 0.4s;
+    }
+
+    .projects .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+    }
+
+    .projects .card h3 {
+      color: #00ffea;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .projects ul li {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #bbb;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #00ffff;
+      color: #000;
+      border-radius: 50%;
+      padding: 12px 16px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <h1>Galif Pathan</h1>
+    <p>AI & Data Science | Full Stack Developer | Java & Python Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="dp app.jpeg" alt="Galif">
+      <p>I am a passionate and dedicated student of Artificial Intelligence and Data Science. I have hands-on experience in Java, Python, web development, and data analytics. I strive to apply technology to real-world problems, especially in AI, ML, and full-stack development. I value teamwork, initiative, and continuous learning.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><img src="html.png" alt="HTML" /><p>HTML</p></div>
+      <div class="card"><img src="css.png" alt="CSS" /><p>CSS</p></div>
+      <div class="card"><img src="js.png" alt="JavaScript" /><p>JavaScript</p></div>
+      <div class="card"><img src="python.jpeg" alt="Python" /><p>Python</p></div>
+      <div class="card"><img src="download.png" alt="Java" /><p>Java</p></div>
+      <div class="card"><img src="angular.png" alt="Angular" /><p>Angular</p></div>
+      <div class="card"><img src="my sql.png" alt="MySQL" /><p>MySQL</p></div>
+      <div class="card"><img src="bootsrap.jpeg" alt="Bootstrap" /><p>Bootstrap</p></div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Fake News Detection | Front-end Developer</h3>
+      <p>Technologies: HTML, CSS, JS, Python, NLP, Scikit-learn, TensorFlow</p>
+      <p>Developed a responsive UI for a fake news detection system with live feedback based on NLP.</p>
+    </div>
+    <div class="card">
+      <h3>User-Friendly Framework for ICU Length of Stay Prediction Using Explainable AI and 
+Advanced Machine Learning Algorithms.</h3>
+      <p><b>Technologies:</b> Python, Random Forest, XGBoost, Neural Networks, SHAP, LIME, Flask, HTML/CSS <br>
+         <b>Description:</b>
+      </p>
+      <ul>
+        <li>Built a machine learning model to predict how long patients stay in the ICU.</li>
+        <li>Helped hospitals manage beds and resources more effectively.</li>
+        <li>Used SHAP and LIME to explain how the model makes predictions.</li>
+        <li>Used advanced algorithms like Random Forest, XGBoost, and Neural Networks.</li>
+        <li>Created a simple and user-friendly web interface for doctors and staff.</li>
+        <li>Improved accuracy and made insights easy to understand for better decisions.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Responsive Portfolio Website</h3>
+      <p>Developed a personal portfolio using HTML and CSS to showcase projects and skills.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:galif676@gmail.com">galif676@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/galif-pathan-a04ba92b2" target="_blank">Galif Pathan</a></p>
+    <p>GitHub: <a href="https://github.com/galif11" target="_blank">galif11</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Galif Pathan. All rights reserved.</p>
+  </footer>
+
+  <a href="#home" class="back-to-top">&#8679;</a>
+</body>
+</html>
